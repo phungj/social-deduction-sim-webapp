@@ -1,10 +1,10 @@
-type PlayerID = string;
+type PlayerID = number;
 type PlayerName = string;
-type RoleID = string;
+type RoleID = number;
 type RoleName = string;
 type Alignment = string;
 type EventType = string;
-type EventResult = boolean;
+type EventResult = string;
 type Living = boolean;
 
 type Info = {
@@ -59,8 +59,8 @@ type Role = {
 
 type World = {
     players: Player[]
-    roles: Record<PlayerID, RoleID>
-    playerKnowledge: Record<PlayerID, PlayerKnowledge>
+    roles: Map<PlayerID, RoleID>
+    playerKnowledge: Map<PlayerID, PlayerKnowledge>
     publicEvents: PublicEvent[],
     privateEvents: PrivateEvent[]
 }
