@@ -5,6 +5,7 @@ type RoleName = string;
 type Alignment = string;
 type EventType = string;
 type EventResult = boolean;
+type Living = boolean;
 
 type Info = {
     eventType: EventType,
@@ -31,6 +32,7 @@ type PrivateEvent = {
 type Player = {
     playerID: PlayerID,
     playerName: PlayerName,
+    alive: Living
 }
 
 type PlayerKnowledge = {
