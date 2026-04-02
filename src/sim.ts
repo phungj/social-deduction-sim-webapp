@@ -11,3 +11,4 @@
 // TODO: Then filter worlds based on claims
 
 // TODO: Update default config stuff
+// TODO: Also implement daisyui
